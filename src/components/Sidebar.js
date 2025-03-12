@@ -3,7 +3,7 @@
 import { useState } from "react"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
-import { BarChart3, Home, Menu, ThumbsDown, ThumbsUp, X } from "lucide-react"
+import { BarChart3, Home, Menu, ThumbsDown, ThumbsUp, X , Ticket } from "lucide-react"
 import { cn } from "@/lib/utils"
 import { Button } from "@/components/ui/button"
 
@@ -31,7 +31,7 @@ const navItems = [
   {
     title: "Tickets",
     href: "/tickets",
-    icon: ThumbsDown,
+    icon: Ticket,
   },
 ]
 

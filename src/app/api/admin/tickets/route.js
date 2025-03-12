@@ -6,8 +6,8 @@ export async function GET(req) {
     const queryText = `
       SELECT * FROM public_feedback_tickets_view
     `;
-
     const result = await pool.query(queryText);
+    console.log(result);
 
     return NextResponse.json({ data: result[0] }, { status: 200 });
   } catch (error) {
